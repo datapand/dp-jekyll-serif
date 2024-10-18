@@ -1,27 +1,27 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
+    "title": "Let's have a chat?",
+    "description": "See how we can help you solve data problems.",
     "image": {
-      "url": "images/features/noun_branding_1885335.svg",
+      "url": "https://img.icons8.com/sf-black-filled/80/chat.png",
       "width": 80,
       "height": 80
     }
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "Certified Experts",
+    "description": "Our network is made up of experts with current certifications in their fields.",
     "image": {
-      "url": "images/features/noun_The Process_1885341.svg",
+      "url": "https://img.icons8.com/glyph-neue/80/certificate.png",
       "width": 80,
       "height": 80
     }
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Results",
+    "description": "We prioritize incremental deliveries for continuous improvement.",
     "image": {
-      "url": "images/features/noun_3d modeling_1885342.svg",
+      "url": "https://img.icons8.com/pastel-glyph/80/clipboard-approve--v2.png",
       "width": 80,
       "height": 80
     }

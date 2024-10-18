@@ -2,10 +2,18 @@
 <html lang="en">
 
 <head>
+  {% include google-analytics.html %}
+
   <meta charset="utf-8">
   <title>{% if page.title %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.svg' | relative_url }}">
+  <!-- <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.svg' | relative_url }}"> -->
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="datapand" />
+  <link rel="manifest" href="/images/site.webmanifest" />
+
   <!-- Google Fonts CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +21,21 @@
   <!-- Self host font -->
   <!-- <link rel="preload" href="{{ '/assets/fonts/playfair-display.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin> -->
   <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+
+  <!-- Consent -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+
   
+  <script src="https://kit.fontawesome.com/fb1eea8ea3.js" crossorigin="anonymous"></script>
+
   {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
   {% if page.meta_title %}<meta property="og:title" content="{{ page.meta_title }}"/>{% else %}<meta property="og:title" content="{{ page.title }}"/>{% endif %}
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="{{ url }}"/>
   {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}"/>{% endif %}
   {% if page.description %}<meta property="og:description" content="{{ page.description }}"/>{% endif %}
-  <meta name="twitter:card" content="summary"/>
+  {% if site.data.seo.meta_twitter_site %}<meta name="twitter:card" content="summary"/>{% endif %}
   {% if site.data.seo.meta_twitter_site %}<meta name="twitter:site" content="{{ site.seo.meta_twitter_site }}"/>{% endif %}
   {% if site.data.seo.meta_twitter_creator %}<meta name="twitter:creator" content="{{ site.seo.meta_twitter_creator }}"/>{% endif %}
 
@@ -35,6 +50,6 @@
   {% include footer.html %}
   {% include sub-footer.html %}
   <script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
-  {% include google-analytics.html %}
+  <script type="text/javascript" src="{{ '/assets/js/cookie-consent.js' | relative_url }}"></script>
 </body>
 </html>

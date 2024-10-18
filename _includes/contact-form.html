@@ -1,0 +1,19 @@
+
+<form onsubmit="return processform()" id="form" class="topBefore" target="_blank">
+  <input id="name" autocomplete="on" type="text" name="name" required=true placeholder="Name and Surname">
+  <br>
+  <input id="email" autocomplete="on" type="email" name="email" required=true placeholder="E-mail address">
+  <br>
+  <input id="subject" type="text" name="subject" required=true placeholder="Subject">
+  <br>
+  <textarea id="message" name="message" type="text" required=true placeholder="Message"></textarea>
+  <br>
+  <input id="accept" type="checkbox" required="required" aria-required="true" name="accept"> 
+  <label for="accept">I have read the <a href="/privacy">privacy policy</a> and accept it.</label><br>
+  <br>
+  <input id="submit" type="submit" value="Send">
+</form>
+<hr>
+<p id="thank-you-message">
+  Thank you for reaching out. We'll be in touch shortly.
+</p>

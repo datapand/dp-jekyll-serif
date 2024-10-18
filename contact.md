@@ -1,16 +1,21 @@
 ---
 title: Contact
 layout: contact
-description: Contact
+description: Feel free to reach out for any inquiries, we'll get back to you shortly.
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+Feel free to reach out for any inquiries, we'll get back to you shortly.
 
-| Day       | Opening Hours   |
-| --------- | --------------- |
-| Tuesday   | 8:30am - 5:00pm |
-| Wednesday | 8:30am - 5:00pm |
-| Thursday  | 8:30am - 5:00pm |
-| Friday    | 8:30am - 5:00pm |
-| Saturday  | 10:am - 4:00pm  |
-| Saturday  | Closed          |
+{% include contact-form.html %}
+
+## Company details
+
+<address>
+  Datapand B.V.<br />
+  Laan der Zeven Linden 41<br />
+  2645 GR, Delfgauw, NL
+</address>
+
+KvK nr: 92885217 <br />
+BTW nr: NL866205548B01 <br />
+[info@datapand.com](mail:info@datapand.com)

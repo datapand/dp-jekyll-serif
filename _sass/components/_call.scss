@@ -3,12 +3,13 @@
   overflow: hidden;
   background-color: $white-offset;
   border-radius: 4px;
-  // box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  flex-shrink: 0;
   z-index: 2;
   @include media-breakpoint-up(sm) {
     align-items: center;
@@ -36,6 +37,10 @@
   }
   .call-phone {
     margin-bottom: 5px;
+  }
+  .call-message {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   .call-email {
     a {

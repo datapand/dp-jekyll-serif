@@ -4,6 +4,12 @@ bodyClass: "page-basic"
 ---
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    {% if page.intro_image %}
+    <div class="col-12 col-md-12">
+      <img alt="{{ page.title }}" class="page-image{% if page.intro_image_absolute %} page-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
+    </div>
+    <br><br>
+    {% endif %}
     <div class="row justify-content-start">
         <div class="col-12 col-md-8">
             <div class="service service-single">

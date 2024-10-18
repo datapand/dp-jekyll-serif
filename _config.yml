@@ -1,24 +1,25 @@
 baseurl: '/'
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'datapand'
 
 logo:
-  mobile: "images/logo/logo-mobile.svg"
+  mobile: "images/logo/datapand-logo.png"
   mobile_height: "32px"
-  mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "32px"
-  desktop_width: "120px"
+  mobile_width: "64px"
+  desktop: "images/logo/datapand-logo.png"
+  desktop_height: "70px"
+  desktop_width: "140px"
 
 home: 
-  limit_services: 6
+  limit_services: 3
 
 collections:
   services:
     output: true
     sort_by: weight
-  team:
+  solutions:
     output: true
+    sort_by: weight
 
 defaults:
   - scope:
@@ -28,9 +29,14 @@ defaults:
       layout: "service"
   - scope:
       path: ""
-      type: "team"
+      type: "solutions"
     values:
-      layout: "team"
+      layout: "solution"
+  - scope:
+      path: ""
+      type: "technologies"
+    values:
+      layout: "technologies"
 
 sass:
   style: compressed # possible values: nested expanded compact compressed
