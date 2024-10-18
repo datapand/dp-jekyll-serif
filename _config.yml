@@ -1,6 +1,7 @@
 baseurl: '/'
 permalink: pretty
 title: 'datapand'
+url: "https://www.datapand.com"
 
 logo:
   mobile: "images/logo/datapand-logo.png"
@@ -43,6 +44,7 @@ sass:
 
 plugins:
   - jekyll-environment-variables
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
